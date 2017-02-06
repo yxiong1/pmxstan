@@ -1,0 +1,28 @@
+Installation (Jul 2016)
+
+Pre-installation
+- Install R-3.3.x
+- Install Rtools34.exe to the default directory C:\Rtools
+- add the following entries to the top of the PATH environment variable:
+	C:\Rtools\bin;C:\Rtools\mingw_XX\bin;
+  change the above XX to your machine bits (32 or 64)
+- add R bin directory to the PATH
+
+Installation rstan:
+- Install Rcpp, inline
+- Install BH, coda, and brew from CRAN
+- Install the attached StanHeaders 
+- Download rstan-2.9.0 source tar ball (rstan_2.9.0-3.tar.gz) from CRAN, 
+  install rstan from SOURCE 
+  (important so that rstan can recognize the PMXStan extesions)
+- Install PMXStan
+
+******************************
+
+Updates (Dec 2016):
+- Please use the updated StanHeaders_2.12.0-1.tar.gz, which is compatible to the current rstan version 
+- Again, rstan needs to be installed from SOURCE (either with the provided rstan_2.12.1.tar.gz, or downloaded from CRAN), after the StanHeaders_2.12.0-1.tar.gz has been installed successfully
+- R-3.3.2 is recommended; users with R-3.3.1 might encounter problems, while so far all users with R-3.2.2 have been successful
+
+
+
